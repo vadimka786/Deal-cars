@@ -1,0 +1,414 @@
+/* шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+/* базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.orang_btn {
+    padding: 12px 24px;
+    background-color: #EE8313;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    padding: 12px 24px;
+    font-weight: 600;
+    color: #EE8313;
+    border: 1px solid #EE8313;
+    line-height: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title-sections {  /* общий класс для заголовков */
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Header start*/
+
+#header {
+    padding: 40px 0px 107px 0px;
+}
+
+.header__contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600px;
+}
+
+.header-logo__img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-main_header {
+    margin-left: auto;
+}
+
+.nav-main_list{
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+
+.header_Booking-btn {
+    margin-right: 40px;
+}
+
+.select-header-lng {
+    padding: 13px;
+    background-color: #EE8313;
+    border: none;
+    font-weight: 600;
+}
+
+.option-header-lng {
+    background-color: #FFF;
+    font-weight: 600;
+}
+
+/* Header finish */
+/* ------------------------------------------------------------------------------------ */
+/* Main section start */
+ /*    Banner contant start */
+
+#banner-section {
+    position: relative;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.banner {
+    max-width: 475px;
+    padding-top: 45px;
+}
+
+.banner_h2 {
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    max-width: 400px;
+}
+
+.banner_p {
+    margin: 32px 0px 48px;
+    font-size: 17px;
+    color: rgb(255 255 255 / 80%);
+}
+
+.banner_link-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.banner-features_text {
+    font-weight: 600;
+    line-height: 24px
+}
+
+.banner-features_text:first-child {
+    margin-right: 40px;
+}
+
+.banner-features_text-strong {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-right: 16px;
+    vertical-align: sub;
+}
+
+.banner-img {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    height: 100%;
+    right: 0;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    width: 96%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(/img/car_mustang.png) no-repeat;
+    z-index: 2;
+}
+
+.banner-img::after {
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background-color: rgb(52 52 52 / 30%);
+    z-index: 1;
+}
+/*     Banner contant finish */
+/* ------------------------------------------------------------------------------------------------ */
+/* Rent a Luxury Car section start */
+#rent-section {
+    padding:120px 0px;
+}
+
+.div__rent-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.rent {
+    position: relative;
+    background: url(/img/Mask.png) 50%/cover no-repeat;
+    height: 524px;
+    font-weight: 600;
+}
+
+.rent:nth-child(2) {
+    background-image: url(/img/Mask\ \(1\).png);
+}
+
+.rent:nth-child(3) {
+    background-image: url(/img/Mask\ \(2\).png);
+}
+
+.rent:nth-child(4) {
+    background-image: url(/img/Mask\ \(3\).png);
+}
+
+.rent-span {
+    position: absolute;
+    top: 48px ;
+    left: 48px;
+    font-size: 40px;
+    letter-spacing: 0.6px;
+}
+
+.rent__link {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    padding-right: 30px;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+}
+
+.rent__link::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    right: 0;
+    height: 16px;
+    width: 8px;
+    background: url(/img/Vector\ 1.svg) 50%/cover no-repeat;
+    transform: translateY(-50%);
+}
+/* Rent a Luxury Car section finish */
+
+
+/* Our Other Service start */
+    #our-services_section {
+        padding-bottom: 120px;
+    }
+
+    .our-services-h2 {
+        margin-bottom: 66px;
+        text-align: left;
+    }
+
+    .services-wrap {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 24px;
+    }
+
+    .services-img {
+        margin-bottom: 24px;
+    }
+
+    .services-h3 {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .services-text {
+        color: rgb(255 255 255 / 80%);
+    }
+/* Our Other Service finish */
+
+
+/* Popular Destination for Car Rentals start */
+    #car-rentals_section {
+        padding-bottom: 162px;
+    }
+
+    .car-rentals-h2 {
+        width: 590px;
+        margin: 0 auto 40px;
+    }
+
+    .rentals-wrap {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 24px;
+    }
+
+    .rentals {
+        background-color: #171717;
+        border: 1px solid #171717;
+    }
+
+    .location-info {
+        padding: 24px;
+    }
+
+    .rentals-h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .rentals-text {
+        margin: 10px 0px 25px;
+        color: rgb(255 255 255 / 80%);
+    }
+
+    .rentals-price {
+        position: relative;
+        display: block;
+        font-weight: 600;
+        margin-bottom: 17px;
+        padding-left: 42px;
+    }
+    /* машинка */
+    .rentals-price::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%);
+        background: url(/img/Front\ Car.svg) no-repeat;
+    }
+
+    .rentals-link {
+        color: #EE8313;
+    }
+/* Popular Destination for Car Rentals finish */
+
+
+/* Location section start */
+    #section-location {
+        margin-bottom: 102px;
+    }
+/* Location section finish */
+/* Main section finish */
+
+/* Footer section start */
+
+    #footer-section {
+        background: #1F1905;
+        padding-top: 40px;
+    }
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 65px;
+    }
+
+    .footerLogo-Wrap {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 64px;
+        font-weight: 600;
+    }
+
+    .logo-footerImg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer-about__text {
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 235px;
+    }
+
+    .footer-wrap-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        margin: 40px 100px 0px auto;
+    }
+
+    .footer-nav__header {
+        margin-bottom: 32px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .footer-nav-item {
+        margin-bottom: 28px;
+        line-height: 20px;
+    }
+
+    .footer-nav__link {
+        color: rgb(255 255 255 / 80%);
+    }
+
+    .footer-copyrighting {
+        background-color: #EE8313;
+        display: flex;
+        justify-content: center;
+    }
+/* Footer section finish */

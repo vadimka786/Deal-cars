@@ -1,0 +1,15 @@
+{
+  "name": "cars_deals",
+  "version": "1.0.0",
+  "description": "deals car",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "json-server --watch db.json --port 8080"
+  },
+  "author": "Prasolov Vadim",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
