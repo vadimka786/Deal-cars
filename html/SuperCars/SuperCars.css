@@ -101,3 +101,51 @@ button {
 }
 
 /* Effects finish*/
+
+#main-section_supercars {
+    background-color: #1F1905;
+}
+
+.SuperCars-img {
+    max-width: 200px;
+}
+
+.card-of-SuperCar {
+    border: 3px solid #e68027;
+    border-radius: 5%;
+    max-width: 250px;
+    height: 300px;
+    background-color: #000;
+}
+
+.SuperCar-div_wrap {
+    padding: 5px 20px;
+    height: 300px;
+}
+
+.SuperCar-Manage {
+    color: #ef5e10;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.SuperCar-Manage::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    right: 0;
+    left: 70px;
+    height: 10px;
+    width: 8px;
+    background: url(/img/Vector\ 1.svg) 50%/cover no-repeat;
+    transform: translateY(-50%);
+}
+
+.card-of-SuperCar:hover {
+    box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+}
+
+.cards-supercars {
+    padding-top: 20px;
+}

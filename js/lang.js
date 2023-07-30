@@ -262,3 +262,31 @@ const langArr = {
         'en' : '©2022 HKInvestor. All right reserved',
     },
 }
+
+
+const selectLng = document.querySelector('.select-header-lng');
+const allLang = ['en','ru'] /* для проверки */
+
+selectLng.addEventListener('change', changeURLlang);
+function changeURLlang() {
+    let lang = selectLng.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+
+
+function ChangeLng() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    }
+    selectLng.value = hash;
+    for (let key in langArr) {
+        document.querySelector('.' + key).innerHTML = langArr[key][hash];
+    }
+}
+
+ChangeLng();
