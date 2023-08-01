@@ -10,7 +10,7 @@ const langArr = {
         'en': 'cars',
     },
     'nav_li_link-books': {
-        'ru': 'Бранирование',
+        'ru': 'Бронирование',
         'en': 'Book now',
     },
     'nav_li_link-terms': {

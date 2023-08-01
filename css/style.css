@@ -395,6 +395,7 @@ button {
         margin-bottom: 32px;
         font-size: 18px;
         line-height: 20px;
+        cursor: pointer;
     }
 
     .footer-nav-item {
@@ -411,4 +412,6 @@ button {
         display: flex;
         justify-content: center;
     }
+
+
 /* Footer section finish */
