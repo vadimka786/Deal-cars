@@ -37,6 +37,13 @@ button {
     transition: .4s;
 }
 
+.header__contant-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600px;
+}
+
 .orang_btn {
     padding: 12px 24px;
     background-color: #EE8313;
